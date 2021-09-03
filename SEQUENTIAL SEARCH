@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+void sequential_search( int A[],int n, int item)
+{
+   int i=0;
+   for(i;i<n;i++)
+   {
+       if(A[i]==item)
+       {
+           cout<<"\nELEMENT FOUND AT INDEX :"<<i;
+           return ;
+       }
+   }
+   cout<<"\nELEMENT NOT FOUND!";
+   return ;
+}
+
+int main()
+{
+    int n,item;
+    cin>>n;
+    int a[n];
+    cout<<"ENTER ELEMENTS OF ARRAY:"<<endl;
+    for(int i=0;i<n;i++)
+    cin>>a[i];
+    cout<<"ELEMENTS OF ARRAY ARE:"<<endl;
+    for(int i=0;i<n;i++)
+    cout<<a[i]<<" ";
+    cout<<"\nENTER ELEMENT YOU WANT TO SEARCH FOR:";
+    cin>>item;
+   sequential_search(a,n,item);
+
+    return 0;
+}
