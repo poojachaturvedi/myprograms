@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+void delete_element( int A[],int n, int k)
+{
+   int item=A[k];
+    for(int i=k;i<n-1;i++)
+    {
+        A[i]=A[i+1];
+    }
+    n=n-1;
+    cout<<"ELEMENTS OF ARRAY AFTER INSERTION ARE :"<<endl;
+    for(  int i=0;i<n;i++)
+    cout<<A[i]<<" ";
+    cout<<"\nELEMENT AT INDEX "<<k<<" HAVING VALUE "<<item<<" was deleted";
+}
+
+int main()
+{
+    int n,k;
+    cin>>n;
+    int a[n];
+    cout<<"ENTER ELEMENTS OF ARRAY:"<<endl;
+    for(int i=0;i<n;i++)
+    cin>>a[i];
+    cout<<"ELEMENTS OF ARRAY ARE:"<<endl;
+    for(int i=0;i<n;i++)
+    cout<<a[i]<<" ";
+    cout<<"\nENTER INDEX  FROM WHERE YOU WANT TO DELETE ELEMENT:";
+    cin>>k;
+   delete_element(a,n,k);
+
+    return 0;
+}
