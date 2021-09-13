@@ -1,0 +1,7 @@
+array3d=[]
+for i in range(3):
+    array3d.append([['*']*6]*4)
+for i in array3d:
+    for j in i:
+        print(j)
+        print("----------")
