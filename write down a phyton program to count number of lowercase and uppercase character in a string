@@ -1,0 +1,15 @@
+def count(s):
+    lc,uc=0,0
+    for i in s:
+        if i in string.ascii_uppercase:
+            uc+=1
+        if i in string.ascii_lowercase:
+            lc+=1
+    return("lowecase"+str(lc)+"Uppercase"+str(uc))
+s=input(("Enter a string"))
+print(count(s))
+
+OUTPUT:
+
+Enter a string My name IS POOOJA
+lowecase5Uppercase9
