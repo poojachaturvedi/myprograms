@@ -1,0 +1,17 @@
+#write a phyton program to check if a string is pangram or not 
+import string
+def pangram(s):
+    s1=s.lower()
+    if(len(s1)<26):
+        return "not a pangram"
+    for i in string.ascii_lowercase:
+        if i not in s1:
+            return "not a pangram"
+    else:
+        return "pangram"
+print(pangram("Abcd"))
+print(pangram("abcdefghijklmnopqrstuvwxyz"))
+
+output:
+not a pangram
+pangram
