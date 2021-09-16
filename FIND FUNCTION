@@ -1,0 +1,14 @@
+#FIND FUNCTION
+s1="banana"
+print(s1.find("a"))
+print(s1.find("na"))
+print(s1.find("na",3))
+print(s1.find("na",3,5))
+OUTPUT:
+1
+2
+4
+-1
+
+
+
