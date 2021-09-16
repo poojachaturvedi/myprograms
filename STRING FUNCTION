@@ -1,0 +1,36 @@
+import string
+print(string.ascii_uppercase)
+print(string.ascii_lowercase)
+print(string.digits)
+1
+2
+4
+-1
+print("welcome to phyton".endswith("on"))
+print("welcome to phyton".startswith("we"))
+print("welcome to phyton".rfind("on"))
+print("welcome to phyton".count("o"))
+print("int".isalpha())
+print("123".isdigit())
+print("POOJA".isupper())
+print("pooja".islower())
+print("welcome to phyton".capitalize())
+print("welcome to phyton".title())
+print("welcome to phyton".upper())
+print("welcoMe TO PHYTON".lower())
+print("welcoMe TO PHYTON".swapcase())
+print("hello".replace('l','o'))
+True
+True
+15
+3
+True
+True
+True
+True
+Welcome to phyton
+Welcome To Phyton
+WELCOME TO PHYTON
+welcome to phyton
+WELCOmE to phyton
+heooo
