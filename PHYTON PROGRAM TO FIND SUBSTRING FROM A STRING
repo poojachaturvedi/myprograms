@@ -1,0 +1,12 @@
+def findsub(s,sub):
+    for i in range(len(s)):                       OUTPUT:
+        for j in range(len(sub)):                 11
+            if(s[i+j]!=sub[j]):                   6
+                break                             -1
+            else:
+             return i
+    else:
+        return -1
+print(findsub("Welcome to Phyton","Phyt"))
+print(findsub("come run come","run"))
+print(findsub("my name is pooja","Pooja"))
