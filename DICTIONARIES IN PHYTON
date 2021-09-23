@@ -1,0 +1,35 @@
+D={}
+D1={"ONE":1,2:"TWO"}
+D2={"MANGO":30,"APPLE":40,"ORANGE":50}
+print(D1,D2)
+print(type(D1))
+print(len(D1))
+#we can't use list as key as keys are immutable by nature 
+#print([1,2,3]:1)
+D2['MANGO']=20
+#earlier D2 mango had value 30 but as dictionary are mutable so we can assign 20 to mango but 
+print(D2)
+D2["MANGO"]
+#-->D[john] will print the value at the given key 
+d={"john":40,"peter":50}
+
+d["john"]
+#keys-->returns all keys of the dictionary 
+#values-->returns all values of the dictionary 
+#items-->returns all key-value pairs
+print(D2.keys())
+print(D2.values())
+print(D2.items())
+#del deletes the value at given values 
+del D2['MANGO']
+print(D2)
+#update adds the value to old dictionary 
+a={'a':400,'b':300,'c':500}
+b={'a':300,'d':500}
+a.update(b)
+print(a)
+#get() function either gets the values at the key or returns the second argument as a result 
+print(a.get('b',0))
+print(a.get('e',0))
+print(a.get('b',0))
+print(a.get('e',0))
