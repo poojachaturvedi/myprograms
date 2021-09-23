@@ -1,0 +1,13 @@
+def CaS(s="",k=0):
+    s1=""
+    for i in s.lower():
+        if i.isalpha():
+            if(ord(i)+k<=122):
+                if i.isalpha():
+                    s1+=chr(ord(i)+k)
+                else:
+                    s1+=chr(ord(i)+k-122+96)
+        else:
+            s1+=i
+    return s1
+print(CaS("hello",3))
